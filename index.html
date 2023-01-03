@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 - Mini project</title>
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1> CSS Cheat sheet</h1>
+        <p>
+            Ever have trouble remembering syntax of favorite css code?
+            Give it a permanent home on this page!
+            Select any snippet below and it'll automatically select all of the code for you to copy
+        </p>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h3>
+                    Flexbox Row
+                </h3>
+                <p>
+                    use these three properties to create a flexbox row layout
+                </p>
+                <pre>
+                    <code>
+                        .row {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h3>
+                    Flexbox column
+                </h3>
+                <p>
+                    use this to create a flexbox column layout
+                </p>
+                <pre>
+                    <code>
+                        .column {
+                            display: f;ex;
+                            flex-direction: column
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h3>
+                    css grid layout
+                </h3>
+                <p>
+                    Build a 12-column layout using CSS grid
+                </p>
+                <pre>
+                    <code>
+                        .grid {
+                            display: grid;
+                            width: 100%;
+                            grid-template-columns:
+                        repeat(12, 1fr); 
+                        }
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h3>
+                    Linear gradients
+                </h3>
+                <p>
+                    this will create a backround linear gradient from top to bottom.
+                </p>
+                <pre>
+                    <code>
+                        .linear-gradient-backround {
+                            background-image: linear-gradient(
+                                rgba(232, 102, 236, 0.3) 0%,
+                                rgba(232, 102, 236, 0,6) 100%
+                            );
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h3>
+                    Box Transition Glow
+                </h3>
+                <p>
+                    use transition and box shadows to glow on hover.
+                </p>
+                <pre>
+                    <code>
+                        .code-card .card-header {
+                            border-radius: 8px;
+                            transition: all 0.5s ease-in-out;
+                        }
+
+                        .code-card:hover,
+                        .code-card:hover .card-header {
+                            box-shadow: inset 0px 0px 8px
+                        rgba(232, 102, 236, 1), 0 0 15px
+                        rgba(232, 102, 236, 1);
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h3>
+                    Overlay card with title
+                </h3>
+                <p>
+                    Use postion properties and negative margins to raise elements higher than their natrual starting
+                    point.
+                </p>
+                <pre>
+                    <code>
+                        .card-header {
+                            position: relative;
+                            margin-top: -20px;
+                        }
+                    </code>
+                </pre>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Made with ❤️ and CSS
+        </p>
+    </footer>
+</body>
+
+</html>
